@@ -21,7 +21,7 @@ namespace ExamenGrupal
         public void IniciarCastillo()
         {
             Console.WriteLine("  ");
-
+              
         }
 
         public void IniciarAldea()
