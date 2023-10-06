@@ -1,0 +1,67 @@
+Te encuentras en un bosque.
+¿Quieres entrar a la cueva, al castillo o la aldea?
+→ cueva: Requiere 40 de fuerza. ¿Deseas tomar este camino?	
+→ castilo: Requiere 45 de destreza. ¿Deseas tomar este camino?
+→ aldea: Este camino no necesita ningun requerimiento. ¿Deseas tomar este camino?
+
+(Camino Cueva)
+Entras a la cueva y ves lobos guardianes y una reliquia ¿Que haces?
+→Corres a la reliquia sin importar los lobos guardianes
+→Peleas contra los lobos guardianes
+
+-Opcion 1:
+Obtienes la reliquia, pero sufres heridas en el camino 
+Pierdes 40 puntos de vida
+Te conviertes en un estatua que protege a la aldea de cualquier ataque(Final Neutral)
+
+-Opcion 2:
+Gracias a tu fuerza matas a los lobos guardianes sencillamente y consigues la reliquia
+Te conviertes en un estatua que protege a la aldea de cualquier ataque(Final Neutral)
+
+(Camino Castillo)
+Entras al castillo y ves dos caminos uno lleno de demonios y otro lleno de trampas ¿que camino eliges?
+→Tomar el camino de los demonios
+→Tomar el camino lleno de trampas
+
+-Opción 1:
+Vences a los enemigos y pierdes demasiada vida, pero igual consigues llegar al trono y convertirte en el rey(Final Bueno)
+Pierdes 30 puntos de vida
+-Opción 2:
+Los demonios desaparecen
+Cruzas facilmente las trampas al tener una gran destreza, llegas al trono y te conviertes en rey(Final Bueno)
+
+(Camino Aldea)
+Este camino solo llevo a que seas espectador de como del castillo salen demonios a atacar la aldea
+→ Termino el juego (final malo)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
