@@ -51,7 +51,14 @@ namespace ExamenGrupal
             Console.Write("¡Ahora empezará la real aventura :D !");
             Console.ReadLine();
         }
-
+        public void continuardialogo()
+        {
+            Dialogo dialogo = new Dialogo(jugador.Nombre,jugador.Fuerza, jugador.Destreza, jugador.Vida);
+            dialogo.IniciarCueva();
+            dialogo.IniciarCastillo();
+            dialogo.IniciarAldea();
+            Console.ReadLine();
+        }
         private int Comprobando(int minimo, int maximo) // validacion de ingreso de numeros, que no ingrese ni letras ni numeros negativos
         {
             int valor;
