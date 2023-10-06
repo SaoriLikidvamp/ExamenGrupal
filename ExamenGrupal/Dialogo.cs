@@ -118,9 +118,8 @@ namespace ExamenGrupal
                             Console.WriteLine("- ¡Ganaste! Eres un rey  (Final Bueno) -");
                             Console.WriteLine("----------------------------------------");
                             Console.WriteLine(" ");
+                            return;
                         }
-                        break;
-
                     case "2":
                         if (jugador.Destreza > 45)
                         {
@@ -133,14 +132,15 @@ namespace ExamenGrupal
                             Console.WriteLine("- ¡Ganaste! Eres un rey  (Final Bueno) -");
                             Console.WriteLine("----------------------------------------");
                             Console.WriteLine(" ");
+                            return;
                         }
                         else
                         {
                             Console.WriteLine(" ");
                             Console.WriteLine("- No tienes suficiente destreza para entrar al castillo -");
                             Console.WriteLine(" ");
+                            return;
                         }
-                        break;
                     default:
                         Console.WriteLine(" ");
                         Console.WriteLine("Opción no válida. Regresando a la historia...");
