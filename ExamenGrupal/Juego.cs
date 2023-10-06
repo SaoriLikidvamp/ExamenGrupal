@@ -49,15 +49,50 @@ namespace ExamenGrupal
             jugador.MostrarJugador();
             Console.WriteLine("  ");
             Console.Write("¡Ahora empezará la real aventura :D !");
+            Console.WriteLine("  ");
+            Console.WriteLine("Presiona Enter para continuar...");
             Console.ReadLine();
+            Console.Clear();
+
+            ContinuarDialogo();
         }
-        public void continuardialogo()
+        public void ContinuarDialogo()
         {
-            Dialogo dialogo = new Dialogo(jugador.Nombre,jugador.Fuerza, jugador.Destreza, jugador.Vida);
-            dialogo.IniciarCueva();
-            dialogo.IniciarCastillo();
-            dialogo.IniciarAldea();
-            Console.ReadLine();
+            Dialogo dialogo = new Dialogo(jugador.Nombre, jugador.Fuerza, jugador.Destreza, jugador.Vida);
+            
+            while(true)
+            {
+                Console.WriteLine("  ");
+                Console.WriteLine("Elige tu próxima acción:");
+                Console.WriteLine("1. Explorar la cueva");
+                Console.WriteLine("2. Adentrarte en el castillo");
+                Console.WriteLine("3. Observar la aldea");
+
+                string opcion = Console.ReadLine();
+
+                switch (opcion)
+                {
+                    case "1":
+                        dialogo.IniciarCueva(jugador);
+                        break;
+                    case "2":
+                        dialogo.IniciarCastillo(jugador);
+                        break;
+                    case "3":
+                        dialogo.IniciarAldea(jugador);
+                        break;
+                    default:
+                        Console.WriteLine("Decisión no válida. Por favor, selecciona una opción válida.");
+                        continue;
+                }
+
+                Console.WriteLine("  ");
+                Console.WriteLine("¡Gracias por jugar!");
+                Console.WriteLine("  ");
+                Console.WriteLine("Presiona Enter para salir...");
+                Console.ReadLine();
+                Environment.Exit(0);
+            }
         }
         private int Comprobando(int minimo, int maximo) // validacion de ingreso de numeros, que no ingrese ni letras ni numeros negativos
         {
