@@ -18,7 +18,7 @@ namespace ExamenGrupal
         {
             this.Nombre = nombre;
             this.Fuerza = fuerza;
-           this.Destreza = destreza;
+            this.Destreza = destreza;
             this.Vida = vida;
         }
     }
