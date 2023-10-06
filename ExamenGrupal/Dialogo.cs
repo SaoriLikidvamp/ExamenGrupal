@@ -50,10 +50,9 @@ namespace ExamenGrupal
                             Console.WriteLine("- Eres una gran estatua protectora (Final Neutral)");
                             Console.WriteLine("--------------------------------------------------");
                             Console.WriteLine("  ");
+                            return;
                         }
-                        break;
-
-
+                        
                     case "2":
 
                         if (jugador.Fuerza >= 40)
@@ -67,14 +66,15 @@ namespace ExamenGrupal
                             Console.WriteLine("- Eres una gran estatua protectora (Final Neutral)");
                             Console.WriteLine("--------------------------------------------------");
                             Console.WriteLine("  ");
+                            return;
                         }
                         else
                         {
                             Console.WriteLine("  ");
                             Console.WriteLine("- No tienes suficiente fuerza para entrar a la cueva -");
                             Console.WriteLine("  ");
+                            return;
                         }
-                        break;
 
                     default:
                         Console.WriteLine(" ");
